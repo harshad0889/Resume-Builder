@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" bas>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <base href="/" />
+  <title>Ship Easy</title>
+  <link href="/dist/assets/img/favicon.png" rel="icon">
+
+  <link rel="stylesheet" href="/dist/assets/css/bootstrap.min.css">
+
+
+
+  <!-- Animation library for notifications   -->
+  <link href="/dist/assets/css/animate.min.css" rel="stylesheet" />
+  <!-- <script type="text/javascript" src="https://raw.githubusercontent.com/ibrahimmt/leensouq/master/build.min.js"></script> -->
+  <!--  Light Bootstrap Table core CSS    -->
+  <link href="/dist/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+  <!--  -->
+  <!-- <link href="/dist/assets/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="/dist/assets/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <link href="/dist/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+  <link href="/dist/assets/css/style.css" rel="stylesheet" />
+  <script src="https://apis.google.com/js/api.js"> </script>
+
+
+
+</head>
+
+<body className="">
+
+
+  <div id="app"></div>
+
+
+  <!-- credits -->
+
+</body>
+
+<script type="text/javascript">
+
+  //if ( !localStorage.getItem('visitorcountry') || !localStorage.getItem('visitorcurrency') ) {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  //if ( !localStorage.getItem('visitorcountry') || !localStorage.getItem('visitorcurrency') ) {
+  // script.src = "http://www.geoplugin.net/javascript.gp";
+  //}
+  script.setAttribute('src', 'http://www.geoplugin.net/javascript.gp');
+  script.onload = function () {
+
+    // if ( !localStorage.getItem('visitorcountry') || !localStorage.getItem('visitorcurrency') ){
+    localStorage.setItem('visitorcountry', window.geoplugin_countryCode());
+    localStorage.setItem('visitorcurrency', window.geoplugin_currencyCode());
+    localStorage.setItem('visitorcurrencysymbol', window.geoplugin_currencySymbol_UTF8());
+
+    //}
+  }
+  document.body.appendChild(script);
+//}
+
+
+</script>
+
+</html>
