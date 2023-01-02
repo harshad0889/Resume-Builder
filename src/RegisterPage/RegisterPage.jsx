@@ -78,8 +78,7 @@ class RegisterPage extends React.Component {
                     <div className="logo-box-auth">
 
                         <div className="logo-box">
-                            <img src="/dist/assets/img/logo.png" />
-                            {/* <span> Ship Easy </span> */}
+                            <img src="/dist/assets/img/resume.png" />
                         </div>
                     </div>
                     <div className="login-box">

@@ -59,7 +59,7 @@ class Sidebar extends React.Component {
                                         this.closeMenu();
                                     }}>
                                     <i className='pe-7s-users'></i>
-                                    <p>Resume List</p>
+                                    <p>Resumes</p>
                                 </Link>
                             </li>
                         }

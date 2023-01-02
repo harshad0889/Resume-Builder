@@ -151,10 +151,7 @@ class App extends React.Component {
                                             <PrivateRoute exact path="/" component={HomePage} />
                                             <Route path="/login" component={LoginPage} />
                                             <Route path="/register" component={RegisterPage} />
-                                            <Route path="/forgotPassword" component={ForgotPassword} />
-
-                                            <PrivateRoute path="/resetPassword" component={ResetPassword} />
-                                            <Route path="/emailverify" component={EmailVerify} />
+                                           
 
                                             {/* user */}
                                             <PrivateRoute path="/profile" component={Profile} />

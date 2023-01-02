@@ -66,7 +66,6 @@ class LoginPage extends React.Component {
 
                         <div className="logo-box">
                             <img src="/dist/assets/img/logo.png" />
-                            {/* <span>Ship Easy </span> */}
                         </div>
                     </div>
 
