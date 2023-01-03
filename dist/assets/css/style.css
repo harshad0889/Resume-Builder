@@ -173,11 +173,39 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
   font-weight: 400;
 }
 
+.form-control:focus {
+  border-color: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #f1f1f1;
+}
+
 .form-control {
-  display: block;
-  width: 100%;
-  padding: .375rem .75rem;
-  font-size: .75rem;
+  /* background-color: #ffffff; */
+  /* background-color: #F1F1F1; */
+  border: 1px solid #c4bfbf;
+  border-radius: 4px;
+  /* color: #565656; */
+  padding: 7px 11px;
+  height: 40px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  /* border: none; */
+  font-family: "poppins-med";
+}
+select.form-control {
+  padding: 2px;
+  line-height: 10px;
+  height: 40px !important;
+}
+.selectdesign {
+  background: #ffffff;
+  border: none;
+  height: 33px;
+  padding-right: 14px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, .125);
 }
 
 .btn {

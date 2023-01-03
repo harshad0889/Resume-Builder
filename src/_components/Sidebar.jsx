@@ -63,7 +63,18 @@ class Sidebar extends React.Component {
                                 </Link>
                             </li>
                         }
-                      
+                        {isAdmin &&
+                            <li className={((path === '/resumelist') ? 'active' : '')}>
+                                <Link className='nav-link' to='/userslist'
+                                    onClick={() => {
+                                        this.closeMenu();
+                                    }}>
+                                    <i className='pe-7s-users'></i>
+                                    <p>Resumes</p>
+                                </Link>
+                            </li>
+                        }
+
                     </ul>
                 </div>
             </div>

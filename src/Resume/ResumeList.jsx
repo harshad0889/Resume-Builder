@@ -5,7 +5,7 @@ import { userActions } from '../_actions';
 import { reducerConstants } from '../_constants';
 import { history } from '../_helpers';
 
-class UsersList extends React.Component {
+class ResumeList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -206,14 +206,14 @@ class UsersList extends React.Component {
                         <div className="card-header page-header ">
                             <div className="row">
                                 <div className="col-md-8">
-                                    <h4> User List</h4>
+                                    <h4> Resume List</h4>
                                 </div>
                                 <div className="col-md-4">
                                     <a
                                         className="btn btn-primary float-right"
                                         href="/useradd/0">
                                         <i className="fas fa-user-plus" />
-                                        <span> Add User</span>
+                                        <span> New +</span>
                                     </a>
                                 </div>
                             </div>
@@ -259,13 +259,6 @@ class UsersList extends React.Component {
                                         <tbody>{userRows}</tbody>
                                     </table>
                                 )}
-                            {this.props.requestStatus ===
-                                reducerConstants.USERLIST_REQUEST && <LoadingImg />}
-                            {this.props.requestStatus ===
-                                reducerConstants.USERLIST_SUCCESS
-                                && this.props.userData
-                                && this.props.userData.docs
-                                && this.props.userData.docs.length === 0 && <p className="margin-top-20 text-center"> No result found </p>}
                         </div>
                         <div className="card-footer">
                             <ul className="pagination">{paginationItems}</ul>
@@ -315,12 +308,12 @@ class UsersList extends React.Component {
 function mapStateToProps(state) {
     // const { results } = state.test
 
-    const { requestStatus, userData } = state.users;
+    // const { requestStatus, userData } = state.users;
     return {
-        requestStatus,
-        userData
+        // requestStatus,
+        // userData
     };
 }
 
-const connectedUserList = connect(mapStateToProps)(UsersList);
-export { connectedUserList as UsersList };
+const connectedResumeList = connect(mapStateToProps)(ResumeList);
+export { connectedResumeList as ResumeList };

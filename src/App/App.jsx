@@ -15,7 +15,7 @@ import { RegisterPage } from '../RegisterPage';
 import { miscService } from '../_services';
 
 // import { CallList } from '../Call'
-import { User, UserAdd, UsersList } from '../Users';
+import { Resume, ResumeAdd, ResumeList } from '../Resume';
 
 import { Profile, ProfileUpdate } from '../Profile'; 
 
@@ -157,9 +157,9 @@ class App extends React.Component {
                                             <PrivateRoute path="/profile" component={Profile} />
                                             <PrivateRoute path="/profileupdate" component={ProfileUpdate} />
 
-                                            <PrivateRoute path="/user/:id" component={User} />
-                                            <PrivateRoute path="/useradd/:id" component={UserAdd} />
-                                            <PrivateRoute path="/userslist" component={UsersList} />
+                                            <PrivateRoute path="/resume/:id" component={Resume} />
+                                            <PrivateRoute path="/resumeadd/:id" component={ResumeAdd} />
+                                            <PrivateRoute path="/resumelist" component={ResumeList} />
 
                                  
                                             <PrivateRoute render={() => <h1>404 Error</h1>} />
